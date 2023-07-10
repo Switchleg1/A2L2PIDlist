@@ -29,19 +29,31 @@ Fuel Flow SP,mg/stk,x / 47.181425486,%01.0f,0xd0012726,2,FALSE,-100,100,-100,100
 Fuel Split MPI,,x / 128,%01.0f,0xd00187c5,1,FALSE,-100,100,-100,100,0,TRUE,Fuel,
 Fuel Trim,%,stft + ltft,%01.1f,0xffffffff,1,FALSE,-35,35,-1000,1000,0,TRUE,Fuel.Default|ROUND,
 Gear,gear,x,%01.0f,0xd000c2bb,1,FALSE,0,6,-1,7,0,TRUE,,gear
-HPFP Eff Vol,%,x / 655.35999999,%01.0f,0xd0011e3a,2,FALSE,-100,100,-1000,1000,0,TRUE,,
+HPFP Eff Vol,%,x / 655.35999999,%01.0f,0xd0011e3a,2,FALSE,-100,100,-1000,1000,0,TRUE,Fuel,
 IAT,°C,(x - 64) / 1.33,%01.1f,0xd000e425,1,FALSE,-50,70,-30,50,0.9,TRUE,Misc.Default|BAR_V|3,
-Ign Table,°,(x - 95) / 2.66667,%01.0f,0xd000c050,1,FALSE,-5,15,-100,100,0,TRUE,Ignition,
-Ign Avg,°,(x - 95) / 2.66667,%01.0f,0xd000c06c,1,FALSE,-5,15,-100,100,0,TRUE,Ignition,
+Ign Table,°,(x - 95) / 2.66667,%01.1f,0xd000c050,1,FALSE,-5,15,-100,100,0,TRUE,Ignition,
+Ign Avg,°,(x - 95) / 2.66667,%01.1f,0xd000c06c,1,FALSE,-5,15,-100,100,0,TRUE,Ignition,
 Inj PW DI,ms,x / 250,%01.1f,0xd0012ada,2,FALSE,-25,25,-1000,1000,0,TRUE,Fuel,
 Inj PW MPI,ms,x / 250,%01.1f,0xd001287a,2,FALSE,0,100,-1000,1000,0,TRUE,Fuel,
 Intake Cam Pos,°,x / 128,%01.0f,0xd0013482,2,TRUE,-100,100,-100,100,0,TRUE,,
 Intake Flow Fact,,x / 16384,%01.0f,0xd0012122,2,FALSE,0,20,-1000,1000,0,TRUE,,
 Knock Avg,°,(x - 128) / 2.66,%01.2f,0xd0018bca,1,FALSE,0,-5,-3,3,0,TRUE,Ignition.Default|BAR_V|4,
-Knock Cyl 1,°,(x - 128) / 2.6667,%01.2f,0xd0018bc0,1,FALSE,0,-5,-5,1000,0,TRUE,Ignition,knock_a
-Knock Cyl 2,°,(x - 128) / 2.6667,%01.2f,0xd0018bc1,1,FALSE,0,-5,-5,1000,0,TRUE,Ignition,knock_b
-Knock Cyl 3,°,(x - 128) / 2.6667,%01.2f,0xd0018bc2,1,FALSE,0,-5,-5,1000,0,TRUE,Ignition,knock_c
-Knock Cyl 4,°,(x - 128) / 2.6667,%01.2f,0xd0018bc3,1,FALSE,0,-5,-5,1000,0,TRUE,Ignition,knock_d
+Knock Cyl 1,°,(x - 128) / 2.6667,%01.2f,0xd0018bc0,1,FALSE,0,-5,-5,1000,0,TRUE,Knock,knock_a
+Knock Cyl 2,°,(x - 128) / 2.6667,%01.2f,0xd0018bc1,1,FALSE,0,-5,-5,1000,0,TRUE,Knock,knock_b
+Knock Cyl 3,°,(x - 128) / 2.6667,%01.2f,0xd0018bc2,1,FALSE,0,-5,-5,1000,0,TRUE,Knock,knock_c
+Knock Cyl 4,°,(x - 128) / 2.6667,%01.2f,0xd0018bc3,1,FALSE,0,-5,-5,1000,0,TRUE,Knock,knock_d
+Knock RNG 1,,x /819.2000000000001,%01.2f,0xd0012f68,2,FALSE,0,100,-1000,1000,0,TRUE,Knock,
+Knock RNG 2,,x /819.2000000000001,%01.2f,0xd0012f6a,2,FALSE,0,100,-1000,1000,0,TRUE,Knock,
+Knock RNG 3,,x /819.2000000000001,%01.2f,0xd0012f6c,2,FALSE,0,100,-1000,1000,0,TRUE,Knock,
+Knock RNG 4,,x /819.2000000000001,%01.2f,0xd0012f6e,2,FALSE,0,100,-1000,1000,0,TRUE,Knock,
+Knock THD 1,,x/51.2,%01.2f,0xd000c0cc,1,FALSE,0,100,-1000,1000,0,TRUE,Knock,
+Knock THD 2,,x/51.2,%01.2f,0xd000c0cd,1,FALSE,0,100,-1000,1000,0,TRUE,Knock,
+Knock THD 3,,x/51.2,%01.2f,0xd000c0ce,1,FALSE,0,100,-1000,1000,0,TRUE,Knock,
+Knock THD 4,,x/51.2,%01.2f,0xd000c0cf,1,FALSE,0,100,-1000,1000,0,TRUE,Knock,
+Knock NL 1,,x/13107.19998965744,%01.2f,0xd0012f76,2,FALSE,0,100,-1000,1000,0,TRUE,Knock,
+Knock NL 2,,x/13107.19998965744,%01.2f,0xd0012f78,2,FALSE,0,100,-1000,1000,0,TRUE,Knock,
+Knock NL 3,,x/13107.19998965744,%01.2f,0xd0012f7a,2,FALSE,0,100,-1000,1000,0,TRUE,Knock,
+Knock NL 4,,x/13107.19998965744,%01.2f,0xd0012f7c,2,FALSE,0,100,-1000,1000,0,TRUE,Knock,
 Lambda,l,x / 32767.999999,%01.2f,0xd00122b8,2,FALSE,0.5,1.5,-0.1,5,0,TRUE,Fuel,
 Lambda SP,l,x / 1024,%01.2f,0xd00130b6,2,FALSE,0,2,-100,500,0,TRUE,Fuel,
 LPFP Duty,%,x / 655.35999999,%01.0f,0xd0011d94,2,FALSE,0,100,-1000,100,0,TRUE,Fuel,
